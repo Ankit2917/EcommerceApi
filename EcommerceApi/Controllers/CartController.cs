@@ -94,7 +94,7 @@ namespace EcommerceApi.Controllers
                 if (cartDetails != null)
                 {
                     _context.cart.Remove(cartDetails);
-                return Ok(new { message = "Product Deleted Successfuly" }); 
+                    return Ok(new { message = "Product Deleted Successfuly" });
                 }
             }
             return BadRequest("Id or userId not received");
